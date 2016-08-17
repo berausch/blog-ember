@@ -1,0 +1,13 @@
+<h1>Everyday I'm Wafflin</h1>
+
+<h2>Welcome to my Waffle blog</h2>
+
+ <h4> This is where I feed my waffle obsession with posts about my dog waffles and about actual edible waffles (although my dog is cute enough to eat! ....not literally, do not eat my dog).</h4>
+
+ {{new-post save2="save3"}}
+
+ <h2>Waffle Posts</h2>
+
+ {{#each model as |post|}}
+    {{post-tile post=post destroyPost="destroyPost"}}
+ {{/each}}

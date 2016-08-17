@@ -1,0 +1,6 @@
+
+<h4{{action 'showContent'}}>{{post.title}} - {{post.date}}</h4>
+{{#if isContentShowing}}
+  <p{{action 'hideContent'}}>{{post.content}}</p>
+{{/if}}
+<button {{action 'delete' post}}>Delete</button>
